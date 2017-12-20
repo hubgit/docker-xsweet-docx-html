@@ -1,4 +1,4 @@
-FROM hubdock/docker-php7-apache-saxonhe
+FROM hubdock/php7-apache-saxonhe
 
 ARG DEBIAN_FRONTEND=noninteractive
 
