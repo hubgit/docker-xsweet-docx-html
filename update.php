@@ -1,5 +1,9 @@
 <?php
 
+if (php_sapi_name() !== 'cli') {
+    exit('The update script must be run from the command line');
+}
+
 $urls = [
     'https://gitlab.coko.foundation/XSweet/XSweet/raw/ink-api-publish/applications/docx-extract/collapse-paragraphs.xsl',
     'https://gitlab.coko.foundation/XSweet/XSweet/raw/ink-api-publish/applications/docx-extract/docx-html-extract.xsl',
@@ -17,7 +21,7 @@ $urls = [
     'https://gitlab.coko.foundation/XSweet/editoria_typescript/raw/ink-api-publish/editoria-reduce.xsl',
 ];
 
-$outputDir = __DIR__ . '/src/xsl';
+$outputDir = '/var/www/html/xsl';
 
 if (!file_exists($outputDir)) {
     mkdir($outputDir);

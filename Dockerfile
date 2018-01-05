@@ -8,7 +8,14 @@ RUN apt-get update \
     && apt-get clean \
     && rm -rf /var/lib/apt/lists/
 
-COPY src/ /var/www/html/
-
 RUN mkdir /input
 VOLUME /input
+
+COPY src/ /var/www/html/
+
+COPY entrypoint.sh entrypoint.sh
+RUN chmod +x entrypoint.sh
+
+COPY update.php update.php
+
+ENTRYPOINT ["./entrypoint.sh"]
