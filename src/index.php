@@ -18,26 +18,15 @@ $zip->extractTo($tmp . '/input');
 
 $steps = [
     [
-        'xsl/docx-html-extract.xsl',
+        'xsl/EXTRACT-docx.xsl',
         $tmp . '/input/word/document.xml',
         $outputFile
     ],
-    'xsl/handle-notes.xsl',
-    'xsl/join-elements.xsl',
-    'xsl/scrub.xsl',
-    'xsl/collapse-paragraphs.xsl',
-    [
-        'xsl/digest-paragraphs.xsl',
-        $outputFile,
-        $tmp . '/paragraphs.xml'
-    ],
-    [
-        'xsl/make-header-escalator-xslt.xsl',
-        $tmp . '/paragraphs.xml',
-        $tmp . '/header-escalator.xsl'
-    ],
-    $tmp . '/header-escalator.xsl',
+    'xsl/hyperlink-inferencer.xsl',
+    'xsl/PROMOTE-lists.xsl',
+    'xsl/header-promotion-CHOOSE.xsl',
     'xsl/final-rinse.xsl',
+    'xsl/editoria-tune.xsl'
     'xsl/p-split-around-br.xsl',
     'xsl/editoria-notes.xsl',
     'xsl/editoria-basic.xsl',
