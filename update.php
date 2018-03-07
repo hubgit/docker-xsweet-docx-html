@@ -7,27 +7,27 @@ if (php_sapi_name() !== 'cli') {
 $urls = [
     // extract
     'https://gitlab.coko.foundation/XSweet/XSweet/raw/master/applications/docx-extract/EXTRACT-docx.xsl',
-      'https://gitlab.coko.foundation/XSweet/XSweet/raw/master/applications/docx-extract/docx-html-extract.xsl',
-        'https://gitlab.coko.foundation/XSweet/XSweet/raw/master/applications/docx-extract/docx-table-extract.xsl',
-      'https://gitlab.coko.foundation/XSweet/XSweet/raw/master/applications/docx-extract/handle-notes.xsl',
-      'https://gitlab.coko.foundation/XSweet/XSweet/raw/master/applications/docx-extract/scrub.xsl',
-      'https://gitlab.coko.foundation/XSweet/XSweet/raw/master/applications/docx-extract/join-elements.xsl',
-      'https://gitlab.coko.foundation/XSweet/XSweet/raw/master/applications/docx-extract/collapse-paragraphs.xsl',
+    'https://gitlab.coko.foundation/XSweet/XSweet/raw/master/applications/docx-extract/docx-html-extract.xsl',
+    'https://gitlab.coko.foundation/XSweet/XSweet/raw/master/applications/docx-extract/docx-table-extract.xsl',
+    'https://gitlab.coko.foundation/XSweet/XSweet/raw/master/applications/docx-extract/handle-notes.xsl',
+    'https://gitlab.coko.foundation/XSweet/XSweet/raw/master/applications/docx-extract/scrub.xsl',
+    'https://gitlab.coko.foundation/XSweet/XSweet/raw/master/applications/docx-extract/join-elements.xsl',
+    'https://gitlab.coko.foundation/XSweet/XSweet/raw/master/applications/docx-extract/collapse-paragraphs.xsl',
 
     // links
     'https://gitlab.coko.foundation/XSweet/XSweet/raw/master/applications/local-fixup/hyperlink-inferencer.xsl',
 
     // lists
     'https://gitlab.coko.foundation/XSweet/XSweet/raw/master/applications/list-promote/PROMOTE-lists.xsl',
-      'https://gitlab.coko.foundation/XSweet/XSweet/raw/master/applications/list-promote/itemize-lists.xsl',
-      'https://gitlab.coko.foundation/XSweet/XSweet/raw/master/applications/list-promote/mark-lists.xsl',
+    'https://gitlab.coko.foundation/XSweet/XSweet/raw/master/applications/list-promote/itemize-lists.xsl',
+    'https://gitlab.coko.foundation/XSweet/XSweet/raw/master/applications/list-promote/mark-lists.xsl',
 
     // header choose and promote
     'https://gitlab.coko.foundation/XSweet/HTMLevator/raw/master/applications/header-promote/header-promotion-CHOOSE.xsl',
-      'https://gitlab.coko.foundation/XSweet/HTMLevator/raw/master/applications/header-promote/make-header-mapper-xslt.xsl',
-      'https://gitlab.coko.foundation/XSweet/HTMLevator/raw/master/applications/header-promote/outline-headers.xsl',
-      'https://gitlab.coko.foundation/XSweet/HTMLevator/raw/master/applications/header-promote/digest-paragraphs.xsl',
-      'https://gitlab.coko.foundation/XSweet/HTMLevator/raw/master/applications/header-promote/make-header-escalator-xslt.xsl',
+    'https://gitlab.coko.foundation/XSweet/HTMLevator/raw/master/applications/header-promote/make-header-mapper-xslt.xsl',
+    'https://gitlab.coko.foundation/XSweet/HTMLevator/raw/master/applications/header-promote/outline-headers.xsl',
+    'https://gitlab.coko.foundation/XSweet/HTMLevator/raw/master/applications/header-promote/digest-paragraphs.xsl',
+    'https://gitlab.coko.foundation/XSweet/HTMLevator/raw/master/applications/header-promote/make-header-escalator-xslt.xsl',
 
     // rinse
     'https://gitlab.coko.foundation/XSweet/XSweet/raw/master/applications/html-polish/final-rinse.xsl',
