@@ -26,7 +26,7 @@ $steps = [
     'xsl/PROMOTE-lists.xsl',
     'xsl/header-promotion-CHOOSE.xsl',
     'xsl/final-rinse.xsl',
-    'xsl/editoria-tune.xsl'
+    'xsl/editoria-tune.xsl',
     'xsl/p-split-around-br.xsl',
     'xsl/editoria-notes.xsl',
     'xsl/editoria-basic.xsl',
